@@ -14,7 +14,9 @@ MOVIES = ['Karate Kid',
           'Star Wars 6',
           'Jurassic Park',
           'Dawn of the Dead',
-          'Home Alone']
+          'Home Alone',
+          'The Theory of Everything',
+          'The Big Lebowski']
 
 def random_recommend(num):
     """Simple recommender that return N movies. Wow!

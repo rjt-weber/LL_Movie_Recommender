@@ -5,25 +5,25 @@ MOVIES = ['Karate Kid',
           'Toy Story 1',
           'Toy Story 2',
           'Toy Story 3',
-          'Toy Story 4',
+          'Mulan',
           'Star Wars 1',
           'Star Wars 2',
           'Star Wars 3',
           'Star Wars 4',
           'Star Wars 5',
-          'Star Wars 6',
+          'Blair Witch Project',
           'Jurassic Park',
           'Dawn of the Dead',
           'Home Alone']
 
 def random_recommend(num):
-    """Simple recommender that return N movies. Wow!
+    """Simple recommender that return random movies. Wow!
     """
-    result = random.sample(MOVIES, k=num)
+    result = random.choices(MOVIES, k=num, replace = False)
     return result
 
-def nmf():
+def best_recommender_ever():
     ...
 
-def deep_recommend():
+def at_least_better_than_netflix():
     ...

@@ -5,7 +5,13 @@ import numpy as np
 MOVIES = ['Toy Story 1',
           'Toy Story 2',
           'Toy Story 3',
-          'Star Wars',
+          'Mulan',
+          'Star Wars 1',
+          'Star Wars 2',
+          'Star Wars 3',
+          'Star Wars 4',
+          'Star Wars 5',
+          'Blair Witch Project',
           'Jurassic Park',
           'Dawn of the Dead',
           'Home Alone',
@@ -53,15 +59,20 @@ probs = random.sample(ranges, k=len(MOVIES))
 
 
 def random_recommend(num):
-    """Simple recommender that return N movies. Wow!
+    """Simple recommender that return random movies. Wow!
     """
     result = random.choices(MOVIES, k=num, weights=probs)
     return result
 
-
 def nmf():
     ...
 
-
 def deep_recommend():
+    result = random.choices(MOVIES, k=num, replace = False)
+    return result
+
+def best_recommender_ever():
+    ...
+
+def at_least_better_than_netflix():
     ...

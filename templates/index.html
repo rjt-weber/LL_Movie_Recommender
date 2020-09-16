@@ -4,15 +4,21 @@
 <head>
   <meta charset="utf-8">
   <title>Lemongrass Movie Recommender</title>
+    <style>
+    body {background-image: url('/static/images/wallpaper2.jpg');}
+    </style>
 </head>
 
 <body>
 
 
   <!-- The body is what is rendered on screen -->
+  <img src="/static/images/header.gif" alt="header_image">
+
   <h1>Hello, Welcome to my Movie Recommender!</h1>
 
   <form action="/recommendations">
+
     <p>Please rate the following movies on a scale from 0.0 to 5.0:</p>
     Movie 1:
     <input type="text" name="movie1" placeholder="0.0 - 5.0"><br>

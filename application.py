@@ -25,7 +25,7 @@ if __name__ == '__main__':
     #whatever occurs after this line is executed when we run "python application.py"
     #however, whatever occurs after this line is NOT executed when we IMPORT application.py
 
-    app.run(debug=True) #this will start an infinite process, i.e. serving our web page.
+    app.run(debug=True, port = 5001) #this will start an infinite process, i.e. serving our web page.
     #debug mode displays backend errors to the browser
     #(good for development but bad idea for production).
     #Also automatically restarts server upon changes to code.
